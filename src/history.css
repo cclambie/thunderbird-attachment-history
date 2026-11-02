@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0 auto; max-width: 52rem; padding: 1rem; }
+header { display: flex; gap: .75rem; align-items: center; margin-bottom: 1rem; }
+h1 { font-size: 1.3rem; margin: 0; flex: none; }
+#search { flex: 1; padding: .4rem; }
+.entry { border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+         border-radius: 6px; padding: .6rem .8rem; margin-bottom: .6rem; }
+.entry .name { font-weight: 600; word-break: break-all; }
+.entry .meta { opacity: .7; font-size: .85rem; margin: .15rem 0 .4rem; }
+.entry ul { margin: .2rem 0 .5rem 1rem; padding: 0; }
+.entry.missing .name { text-decoration: line-through; opacity: .6; }
+.actions { display: flex; gap: .4rem; flex-wrap: wrap; }
+.error { color: #c33; font-size: .85rem; }
+
+label { white-space: nowrap; font-size: .9rem; }
+footer { margin-top: 2rem; font-size: .85rem; opacity: .75; }

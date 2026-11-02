@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Attachment History</title>
+  <link rel="stylesheet" href="history.css">
+</head>
+<body>
+  <header>
+    <h1>Attachment History</h1>
+    <input id="search" type="search" placeholder="Search files, subjects, senders">
+    <label title="Log detailed diagnostics to the add-on console"><input id="debug" type="checkbox"> Debug log</label>
+    <button id="clear">Clear history</button>
+  </header>
+  <main id="list"></main>
+  <footer>Something not working? Turn on <b>Debug log</b>, repeat the action, and copy the console output (Tools → Developer Tools → Debug Add-ons → Inspect) into an <a href="https://github.com/cclambie/thunderbird-attachment-history/issues" target="_blank">issue on GitHub</a>, along with your Thunderbird version and OS.</footer>
+  <p id="empty" hidden>No saved attachments yet. Right-click an attachment and choose “Save with Attachment History”.</p>
+  <script src="history.js"></script>
+</body>
+</html>
